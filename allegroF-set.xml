@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="allegroF-jsbsim-cnf.xml"> -->
+<PropertyList include="allegroF-yasim-cnf.xml">
+
+  <sim>
+    <description>Allegro 2000 (Float)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+

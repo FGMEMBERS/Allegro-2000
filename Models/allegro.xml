@@ -25,15 +25,6 @@
     <object-name>profondeur</object-name>
     <object-name>bol</object-name>
     <object-name>helice</object-name>
-    <object-name>axeA</object-name>
-    <object-name>roueA</object-name>
-    <object-name>cacheA</object-name>
-    <object-name>axeG</object-name>
-    <object-name>roueG</object-name>
-    <object-name>cacheG</object-name>
-    <object-name>axeD</object-name>
-    <object-name>roueD</object-name>
-    <object-name>cacheD</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -67,15 +58,6 @@
     <object-name>profondeur</object-name>
     <object-name>bol</object-name>
     <object-name>helice</object-name>
-    <object-name>axeA</object-name>
-    <object-name>roueA</object-name>
-    <object-name>cacheA</object-name>
-    <object-name>axeG</object-name>
-    <object-name>roueG</object-name>
-    <object-name>cacheG</object-name>
-    <object-name>axeD</object-name>
-    <object-name>roueD</object-name>
-    <object-name>cacheD</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -136,23 +118,6 @@
       <heading-deg> 0 </heading-deg>
     </offsets>
   </model> -->
-
-  <!-- Une ombre pour OSG -->
-  <model>
-    <name>shadowOSG</name>
-    <path>Aircraft/Allegro-2000/Models/shadow.xml</path>
-  </model>
-
-  <animation>
-    <type>select</type>
-    <object-name>shadowOSG</object-name>
-    <condition>
-      <equals>
-        <property>sim[0]/rendering/shadows-ai</property>
-        <value>true</value>
-      </equals>
-    </condition>
-  </animation>
 
   <!-- L'hélice --> 
   <animation>
@@ -316,113 +281,6 @@
       <x> 0 </x>
       <y> 1 </y>
       <z> 0 </z>
-    </axis>
-  </animation>
-
-  <!-- Compression -->
-  <animation>
-    <name>RoueGauche</name>
-    <object-name>roueG</object-name>
-    <object-name>axeG</object-name>
-    <object-name>cacheG</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>RoueGauche</object-name>
-    <property>gear/gear[1]/compression-norm</property>
-    <interpolation>
-      <entry><ind> 0.0 </ind><dep>   4 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> -10 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -1.204 </x-m>
-      <y-m> -0.370 </y-m>
-      <z-m> -0.237 </z-m>
-    </center>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <name>RoueDroite</name>
-    <object-name>roueD</object-name>
-    <object-name>axeD</object-name>
-    <object-name>cacheD</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>RoueDroite</object-name>
-    <property>gear/gear[2]/compression-norm</property>
-    <interpolation>
-      <entry><ind> 0.0 </ind><dep>   4 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> -10 </dep></entry>
-    </interpolation>
-    <center>
-      <x-m> -1.204 </x-m>
-      <y-m>  0.370 </y-m>
-      <z-m> -0.237 </z-m>
-    </center>
-    <axis>
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-
-  <!-- Rotation des roues lors du roulage --> 
-  <animation>
-    <type>spin</type>
-    <object-name>roueA</object-name>
-    <property>gear/gear[0]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m> -2.621 </x-m>
-      <y-m>  0.099 </y-m>
-      <z-m> -0.837 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>spin</type>
-    <object-name>roueG</object-name>
-    <property>gear/gear[1]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m> -1.217 </x-m>
-      <y-m> -0.707 </y-m>
-      <z-m> -0.837 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>spin</type>
-    <object-name>roueD</object-name>
-    <property>gear/gear[2]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m> -1.217 </x-m>
-      <y-m>  0.707 </y-m>
-      <z-m> -0.837 </z-m>
-    </center>
-    <axis>
-      <x>  0 </x>
-      <y> -1 </y>
-      <z>  0 </z>
     </axis>
   </animation>
 

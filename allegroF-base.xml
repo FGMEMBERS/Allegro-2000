@@ -14,11 +14,11 @@
     </startup>
 
     <sound>
-      <path archive="y">Aircraft/Allegro-2000/Sounds/allegro-sound.xml</path>
+      <path archive="y">Aircraft/Allegro-2000/Sounds/allegroF-sound.xml</path>
     </sound>
 
     <model>
-      <path archive="y">Aircraft/Allegro-2000/Models/allegro.xml</path>
+      <path archive="y">Aircraft/Allegro-2000/Models/allegroF.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>

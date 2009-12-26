@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Allegro 2000 - 2009 - Emmanuel BARANGER
+
+  sources      : http://en.wikipedia.org/wiki/Allegro_2007
+
+  Wingspan     : 10.80 m    (  35 ft )
+  lenght       :  6.10 m    (  20 ft )
+  height       :  2.10 m    (   7 ft )
+  Empty mass   :   282 kg   ( 622 lb )
+  Engine       :    80 cv   (  80 hp )
+  Cruise speed :   175 km/h (  75 kt )
+-->
+
+<airplane mass="621">
+
+  <!-- Approach configuration -->
+  <approach speed="30" aoa="4" fuel="0.3">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.5"/>
+    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+    <control-setting axis="/controls/gear/gear-down" value="1.0"/>
+  </approach>
+
+  <!-- Cruise configuration -->
+  <cruise speed="75" alt="5000" fuel="1.0">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.75"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/flight/flaps" value="0.0"/>
+    <control-setting axis="/controls/gear/gear-down" value="0.0"/>
+  </cruise>
+
+  <cockpit x="1.321" y="0.189" z="0.458"/>
+
+  <fuselage ax="2.962" ay="0" az="0.244" bx="-3.166" by="0" bz="0.244" width="1.198" taper="0.4" midpoint="0.25"/>
+
+  <wing x="1.302" y="0" z="0.733"
+        chord="1.076"
+        length="5.388"
+        taper="0.53"
+        camber="0.064">
+        <stall aoa="18" width="1.0" peak="1.5"/>
+        <flap0 start="0.027" end="0.535" lift="1.4" drag="1.5"/>
+        <flap1 start="0.535" end="0.946" lift="1.2" drag="1.1"/>
+
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/> 
+
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+
+        <control-speed control="FLAP1" transition-time="0.01"/>
+        <control-speed control="FLAP0" transition-time="5"/>
+  </wing>
+
+  <hstab x="-2.823" y="0" z="1.109"
+         chord="0.614"
+         length="1.080"
+         taper="1">
+         <stall aoa="20" width="1" peak="1.5"/>
+         <flap0 start="0" end="1.636" lift="2.0" drag="1.1"/>
+
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-2.611" y="0" z="0.050"
+       chord="1.111"
+       length="1.080"
+       taper="0.57"
+       sweep="10">
+       <stall aoa="18" width="3" peak="1.5"/>
+       <flap0 start="0" end="0.935" lift="1.6" drag="1.3"/>
+
+       <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+
+       <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+  </vstab>
+
+  <!-- engine   :    ROTAX 912 S ULS
+       source   :    http://en.wikipedia.org/wiki/Rotax_912 
+       propeller: Albastar / Wezel Flugzeugtechnik AS 180
+  =================================================================================
+  TO-/MC- engine power(kW): 73,5/69
+                      RPM : 5800/5500
+  propeller max RPM: 2387
+  diameter: 1,80 m
+  MTOM: 450 kg -->
+  <propeller x="2.683" y="0" z="0.144" 
+             radius="0.80"
+	     cruise-speed="89" 
+	     cruise-rpm="2263"
+	     cruise-alt="6000" 
+	     cruise-power="95"
+	     takeoff-power="100" 
+	     takeoff-rpm="2387"
+	     mass="145" 
+	     moment="3.24"  
+	     gear-ratio="0.412" >
+             <piston-engine eng-rpm="5800" 
+                            eng-power="100"
+                            displacement="82.6" 
+	                    compression="10.5"/>
+             <actionpt x="3.061" y="0" z="0.144" />
+             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" />
+             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
+             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
+             <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" />
+  </propeller>
+
+  <!-- Flotteurs -->
+  <!-- Avant -->
+  <gear x="3.746" y="0.7" z="-1.336" 
+        compression="1.0" 
+        spring="15" 
+        sfric="0.8" 
+        dfric="0.7" 
+        ignored-by-solver="0"
+        on-water="1" 
+        on-solid="1" 
+        reduce-friction-by-extension="1.15"
+        speed-planing="15" 
+        spring-factor-not-planing="0.7">
+  </gear>
+
+  <gear x="3.746" y="-0.7" z="-1.336" 
+        compression="1.0" 
+        spring="15" 
+        sfric="0.8" 
+        dfric="0.7" 
+        ignored-by-solver="0"
+        on-water="1" 
+        on-solid="1" 
+        reduce-friction-by-extension="1.15"
+        speed-planing="15" 
+        spring-factor-not-planing="0.7">
+  </gear>
+ 
+  <!-- Centrale -->
+  <gear x="1.113" y="0.7" z="-1.269" 
+        compression="1.1" 
+        spring="15" 
+        sfric="0.85" 
+        dfric="0.75" 
+        ignored-by-solver="0"
+        on-water="1" 
+        on-solid="1" 
+        reduce-friction-by-extension="1.15"
+        speed-planing="25" 
+        spring-factor-not-planing="0.25">
+  </gear>
+
+  <gear x="1.113" y="-0.7" z="-1.269" 
+        compression="1.1" 
+        spring="15" 
+        sfric="0.85"
+        dfric="0.75" 
+        ignored-by-solver="0"
+        on-water="1" 
+        on-solid="1" 
+        reduce-friction-by-extension="1.15"
+        speed-planing="25" 
+        spring-factor-not-planing="0.25">
+  </gear>
+
+  <!-- Arriere -->
+  <gear x="-0.885" y="0.7" z="-1.183" 
+        compression="1.0" 
+        spring="8" 
+        sfric="0.9" 
+        dfric="0.8" 
+        ignored-by-solver="1"
+        on-water="1" 
+        on-solid="1" 
+        reduce-friction-by-extension="0.9"
+        speed-planing="25" 
+        spring-factor-not-planing="3">
+  </gear>
+
+  <gear x="-0.885" y="-0.7" z="-1.183" 
+        compression="1.0" 
+        spring="8" 
+        sfric="0.9" 
+        dfric="0.8" 
+        ignored-by-solver="1"
+        on-water="1" 
+        on-solid="1" 
+        reduce-friction-by-extension="0.9"
+        speed-planing="25" 
+        spring-factor-not-planing="3">
+  </gear>
+
+  <!-- Fuel  63 litres -->
+  <tank x="0.72" y="0" z="-0.272" capacity="138" /> 
+
+  <!-- CG theorique : x=1.302 y=0 z=0.733 -->
+  <ballast x="1.8" y="0" z="-3" mass="250"/>
+
+</airplane>
