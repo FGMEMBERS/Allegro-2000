@@ -6,8 +6,8 @@ English/Français
 A little history
 ================
 
-DHC 1
-=====
+Allegro 2000
+============
 
 Manufacturer                  :
 Type                          :
@@ -30,9 +30,10 @@ Thanks
 
 ===============
 BARANGER Emmanuel
-October, 28, 2009.
+December, 18, 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 
@@ -42,8 +43,8 @@ embaranger@free.fr
 Un peu d'histoire
 =================
 
-DHC 1
-=====
+Allegro 2000
+============
 
 Constructeur                  :
 Type                          :
@@ -67,7 +68,8 @@ Remerciements
 
 ===============
 BARANGER Emmanuel
-28 Octobre 2009.
+18 Décembre 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr

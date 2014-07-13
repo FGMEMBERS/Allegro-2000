@@ -5,117 +5,42 @@
   <!-- Le fuselage -->
   <model>
     <path>Aircraft/Allegro-2000/Models/allegro.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <pitch-deg> 0.000 </pitch-deg>
-    </offsets>
   </model>
 
   <!-- Les flotteurs -->
   <model>
     <path>Aircraft/Allegro-2000/Models/floats.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <pitch-deg> 0.000 </pitch-deg>
-    </offsets>
   </model>
 
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/Allegro-2000/Models/shadowF.xml</path>
+    <offsets>
+      <x-m>  0.00000 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.99351 </z-m>
+    </offsets>
   </model>
-
-  <animation>
-    <type>select</type>
-    <object-name>shadowOSG</object-name>
-    <condition>
-      <equals>
-        <property>sim[0]/rendering/shadows-ai</property>
-        <value>true</value>
-      </equals>
-    </condition>
-  </animation>
 
   <!-- Trainée gauche -->
   <model>
-    <path>Aircraft/Allegro-2000/Models/Effects/wakeG.xml</path>
+    <path>Aircraft/Allegro-2000/Models/Effects/Wakes/wakeG.xml</path>
     <offsets>
       <x-m>  0.885 </x-m>
       <y-m> -0.700 </y-m>
       <z-m> -0.888 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg> -45 </pitch-deg>
     </offsets>
   </model> 
 
   <!-- Trainée droite -->
   <model>
-    <path>Aircraft/Allegro-2000/Models/Effects/wakeD.xml</path>
+    <path>Aircraft/Allegro-2000/Models/Effects/Wakes/wakeD.xml</path>
     <offsets>
       <x-m>  0.885 </x-m>
       <y-m>  0.700 </y-m>
       <z-m> -0.900 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, avant gauche -->
-  <model>
-    <path>Aircraft/Allegro-2000/Models/Effects/jetG.xml</path>
-    <offsets>
-      <x-m> -3.746 </x-m>
-      <y-m> -0.700 </y-m>
-      <z-m> -0.900 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, avant droite -->
-  <model>
-    <path>Aircraft/Allegro-2000/Models/Effects/jetD.xml</path>
-    <offsets>
-      <x-m> -3.746 </x-m>
-      <y-m>  0.700 </y-m>
-      <z-m> -0.888 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, centre gauche -->
-  <model>
-    <path>Aircraft/Allegro-2000/Models/Effects/jetmG.xml</path>
-    <offsets>
-      <x-m> -1.113 </x-m>
-      <y-m> -0.700 </y-m>
-      <z-m> -0.888 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, centre droite -->
-  <model>
-    <path>Aircraft/Allegro-2000/Models/Effects/jetmD.xml</path>
-    <offsets>
-      <x-m> -1.113 </x-m>
-      <y-m>  0.700 </y-m>
-      <z-m> -0.888 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <pitch-deg> -45 </pitch-deg>
     </offsets>
   </model> 
 

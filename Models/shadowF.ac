@@ -3,17 +3,17 @@ MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 
 OBJECT world
 kids 1
 OBJECT poly
-name "shadowW.001"
+name "shadowF"
 data 11
 shadowW.001
 texture "shadowF.png"
 texrep 1 1
 crease 30.000000
 numvert 4
-3.18 -0.998351 -5.399997
-3.18 -0.998351 5.4
--3.848821 -0.998351 5.399998
--3.848819 -0.998351 -5.4
+3.18 0 -5.399997
+3.18 0 5.4
+-3.848821 0 5.399998
+-3.848819 0 -5.4
 numsurf 1
 SURF 0x00
 mat 0

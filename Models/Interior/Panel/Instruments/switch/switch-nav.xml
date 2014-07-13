@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>switch-nav.ac</path>
+
+  <animation>
+    <object-name>switch</object-name>
+    <object-name>info</object-name>
+    <object-name>lampOFF</object-name>
+    <object-name>lampON</object-name>
+    
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>switch</object-name>
+    <object-name>info</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <red>   0.80 </red>
+      <green> 0.50 </green>
+      <blue>  0.50 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>lampON</object-name>
+    <emission>
+      <red>   1 </red>
+      <green> 2 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>info</object-name>
+    <object-name>switch</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/nav-lights</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/switch</property>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>switch</object-name>
+    <property>controls/switches/nav-lights</property>
+    <factor> 30 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>lampON</object-name>
+    <condition>
+      <equals>
+        <property>controls/switches/nav-lights</property>
+        <value>1</value>
+      </equals>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>lampOFF</object-name>
+    <condition>
+      <less-than>
+        <property>controls/switches/nav-lights</property>
+        <value>1</value>
+      </less-than>
+    </condition>
+  </animation>
+
+</PropertyList>

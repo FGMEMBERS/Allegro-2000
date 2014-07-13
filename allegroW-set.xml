@@ -1,12 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="allegroW-jsbsim-cnf.xml"> -->
-<PropertyList include="allegroW-yasim-cnf.xml">
+<PropertyList include="allegro-base.xml">
 
   <sim>
+    
     <description>Allegro 2000 (Wheels)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">allegroW-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 1 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
+    <sound>
+      <path archive="y">Aircraft/Allegro-2000/Sounds/allegroW-sound.xml</path>
+    </sound>
+    
+    <model>
+      <path archive="y">Aircraft/Allegro-2000/Models/allegroW.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+    
   </sim>
 
 </PropertyList>
-

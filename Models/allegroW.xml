@@ -1,44 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <!-- Le fuselage -->
   <model>
     <path>Aircraft/Allegro-2000/Models/allegro.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <pitch-deg> 0.000 </pitch-deg>
-    </offsets>
   </model>
 
   <!-- Les roues -->
   <model>
     <path>Aircraft/Allegro-2000/Models/wheels.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <pitch-deg> 0.000 </pitch-deg>
-    </offsets>
   </model>
 
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/Allegro-2000/Models/shadowW.xml</path>
+    <offsets>
+      <x-m>  0.000000 </x-m>
+      <y-m>  0.000000 </y-m>
+      <z-m> -0.818351 </z-m>
+    </offsets>
   </model>
 
-  <animation>
-    <type>select</type>
-    <object-name>shadowOSG</object-name>
-    <condition>
-      <equals>
-        <property>sim[0]/rendering/shadows-ai</property>
-        <value>true</value>
-      </equals>
-    </condition>
-  </animation>
-
+  <!-- Effets sur le sol -->
+  <!-- Roue avant -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -2.62136 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -1.02299 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -1.21691 </x-m>
+      <y-m> -0.70657 </y-m>
+      <z-m> -1.02299 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m> -1.21691 </x-m>
+      <y-m>  0.70657 </y-m>
+      <z-m> -1.02299 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>

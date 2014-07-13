@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- Allegro 2000 - 2009 - Emmanuel BARANGER
 
-  sources      : http://en.wikipedia.org/wiki/Allegro_2007
+     sources      : http://en.wikipedia.org/wiki/Allegro_2007
 
-  Wingspan     : 10.80 m    (  35 ft )
-  lenght       :  6.10 m    (  20 ft )
-  height       :  2.10 m    (   7 ft )
-  Empty mass   :   282 kg   ( 622 lb )
-  Engine       :    80 cv   (  80 hp )
-  Cruise speed :   175 km/h (  75 kt )
+     Wingspan     : 10.80 m    (  35 ft )
+     Lenght       :  6.10 m    (  20 ft )
+     Height       :  2.10 m    (   7 ft )
+     Empty mass   :   282 kg   ( 622 lb )
+     Engine       :    80 cv   (  80 hp )
+     Cruise speed :   175 km/h (  75 kt )
 -->
 
-<airplane mass="621">
+<airplane mass="622" version="YASIM_VERSION_CURRENT">
 
   <!-- Approach configuration -->
   <approach speed="30" aoa="4" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.5"/>
-    <control-setting axis="/controls/flight/flaps" value="1.0"/>
-    <control-setting axis="/controls/gear/gear-down" value="1.0"/>
+    <control-setting axis="/controls/flight/flaps" value="1"/>
+    <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
   <!-- Cruise configuration -->
-  <cruise speed="75" alt="5000" fuel="1.0">
+  <cruise speed="75" alt="5000">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.75"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
-    <control-setting axis="/controls/flight/flaps" value="0.0"/>
-    <control-setting axis="/controls/gear/gear-down" value="0.0"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="0"/>
+    <control-setting axis="/controls/gear/gear-down" value="0"/>
   </cruise>
 
   <cockpit x="1.321" y="0.189" z="0.458"/>
@@ -41,7 +41,7 @@
         length="5.388"
         taper="0.53"
         camber="0.064">
-        <stall aoa="18" width="1.0" peak="1.5"/>
+        <stall aoa="18" width="1" peak="1.5"/>
         <flap0 start="0.027" end="0.535" lift="1.4" drag="1.5"/>
         <flap1 start="0.535" end="0.946" lift="1.2" drag="1.1"/>
 
@@ -75,8 +75,8 @@
        length="1.080"
        taper="0.57"
        sweep="10">
-       <stall aoa="18" width="3" peak="1.5"/>
-       <flap0 start="0" end="0.935" lift="1.6" drag="1.3"/>
+       <stall aoa="18" width="1" peak="1.5"/>
+       <flap0 start="0" end="0.935" lift="1.2" drag="1.1"/>
 
        <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
 
@@ -94,20 +94,20 @@
   MTOM: 450 kg -->
   <propeller x="2.683" y="0" z="0.144" 
              radius="0.80"
-	     cruise-speed="89" 
-	     cruise-rpm="2263"
-	     cruise-alt="6000" 
-	     cruise-power="95"
-	     takeoff-power="100" 
-	     takeoff-rpm="2387"
-	     mass="145" 
-	     moment="3.24"  
-	     gear-ratio="0.412" >
+             cruise-speed="89" 
+             cruise-rpm="2263"
+             cruise-alt="6000" 
+             cruise-power="95"
+             takeoff-power="100" 
+             takeoff-rpm="2387"
+             mass="145" 
+             moment="3.24"  
+             gear-ratio="0.412" >
+             <actionpt x="3.061" y="0" z="0.144" />
              <piston-engine eng-rpm="5800" 
                             eng-power="100"
                             displacement="82.6" 
-	                    compression="10.5"/>
-             <actionpt x="3.061" y="0" z="0.144" />
+                            compression="10.5"/>
              <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" />
              <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
              <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
@@ -115,7 +115,7 @@
   </propeller>
 
   <!-- Flotteurs -->
-  <!-- Avant -->
+  <!-- Avant 0/1 -->
   <gear x="3.746" y="0.7" z="-1.336" 
         compression="1.0" 
         spring="15" 
@@ -142,8 +142,8 @@
         spring-factor-not-planing="0.7">
   </gear>
  
-  <!-- Centrale -->
-  <gear x="1.113" y="0.7" z="-1.269" 
+  <!-- Centrale 2/3 -->
+  <gear x="1.113" y="0.7" z="-1.179" 
         compression="1.1" 
         spring="15" 
         sfric="0.85" 
@@ -156,7 +156,7 @@
         spring-factor-not-planing="0.25">
   </gear>
 
-  <gear x="1.113" y="-0.7" z="-1.269" 
+  <gear x="1.113" y="-0.7" z="-1.179" 
         compression="1.1" 
         spring="15" 
         sfric="0.85"
@@ -169,8 +169,8 @@
         spring-factor-not-planing="0.25">
   </gear>
 
-  <!-- Arriere -->
-  <gear x="-0.885" y="0.7" z="-1.183" 
+  <!-- Arriere 4/5 -->
+  <gear x="-0.885" y="0.7" z="-1.093" 
         compression="1.0" 
         spring="8" 
         sfric="0.9" 
@@ -183,7 +183,7 @@
         spring-factor-not-planing="3">
   </gear>
 
-  <gear x="-0.885" y="-0.7" z="-1.183" 
+  <gear x="-0.885" y="-0.7" z="-1.093" 
         compression="1.0" 
         spring="8" 
         sfric="0.9" 
@@ -199,7 +199,7 @@
   <!-- Fuel  63 litres -->
   <tank x="0.72" y="0" z="-0.272" capacity="138" /> 
 
-  <!-- CG theorique : x=1.302 y=0 z=0.733 -->
-  <ballast x="1.8" y="0" z="-3" mass="250"/>
+  <!-- Mass displacment -->
+  <ballast x="1.6" y="0" z="-0.6" mass="250"/>
 
 </airplane>
