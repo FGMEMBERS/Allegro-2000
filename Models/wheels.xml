@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>wheels.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>axeG</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>roueG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>cacheD</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
+    <object-name>cacheA</object-name>
+    <object-name>roueA</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>axeG</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>roueG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>cacheD</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
+    <object-name>cacheA</object-name>
+    <object-name>roueA</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>axeA</object-name>
+    <object-name>axeG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>cacheA</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>cacheD</object-name>
+  </effect>
+  
+  <!-- Compression -->
+  <animation>
+    <name>RoueGauche</name>
+    <object-name>roueG</object-name>
+    <object-name>axeG</object-name>
+    <object-name>cacheG</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueGauche</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   4 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -10 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.204 </x-m>
+      <y-m> -0.370 </y-m>
+      <z-m> -0.237 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>RoueDroite</name>
+    <object-name>roueD</object-name>
+    <object-name>axeD</object-name>
+    <object-name>cacheD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueDroite</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   4 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -10 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.204 </x-m>
+      <y-m>  0.370 </y-m>
+      <z-m> -0.237 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Rotation des roues lors du roulage --> 
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -2.621 </x-m>
+      <y-m>  0.099 </y-m>
+      <z-m> -0.837 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueG</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -1.217 </x-m>
+      <y-m> -0.707 </y-m>
+      <z-m> -0.837 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueD</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -1.217 </x-m>
+      <y-m>  0.707 </y-m>
+      <z-m> -0.837 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

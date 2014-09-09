@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.337 </y-m>
+      <z-m> -0.093 </z-m>
+    </offsets>
+  </model> 
+
+  <!-- ASI --> 
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.233 </y-m>
+      <z-m> -0.093 </z-m>
+    </offsets>
+  </model>
+
+  <!-- vsi -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.128 </y-m>
+      <z-m> -0.093 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m>  0.138 </y-m>
+      <z-m> -0.120 </z-m>
+    </offsets>
+  </model>
+
+  <!-- KT76A -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
+    <offsets>
+      <x-m>  0.109 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m> -0.003 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Kap140 -->
+  <model>
+    <path>Aircraft/Katana/Models/Interior/Panel/Instruments/kap140/KAP140TwoAxisAlt.xml</path>
+    <offsets>
+      <x-m>  0.114 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m>  0.061 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUELPRESS -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/fuelpress/fuelpress.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m>  0.218 </y-m>
+      <z-m> -0.121 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.288 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m>  0.300 </y-m>
+      <z-m> -0.121 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- SWITCH -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch-nav.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.39320 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch-land.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.36420 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch-taxi.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.33520 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch-instr.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.30620 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.27720 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.24820 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.21920 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.19020 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.11123 </x-m>
+      <y-m> -0.16120 </y-m>
+      <z-m> -0.17372 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/cage.xml</path>
+    <offsets>
+      <x-m>  0.11133 </x-m>
+      <y-m> -0.04120 </y-m>
+      <z-m> -0.17206 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch-batt.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m> -0.172 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/switch/switch2.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.023 </y-m>
+      <z-m> -0.172 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MAGNETO -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/magneto/mags.xml</path>
+    <offsets>
+      <x-m>  0.112 </x-m>
+      <y-m> -0.106 </y-m>
+      <z-m> -0.184 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- DIVERS -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/divers/divers.xml</path>
+    <offsets>
+      <x-m> 0.11076 </x-m>
+      <y-m> 0.01979 </y-m>
+      <z-m> 0.12294 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- GPS -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/gps/gps.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m> -0.073 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Allegro-2000/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> 0.137 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.162 </z-m>
+      <pitch-deg> 25 </pitch-deg>
+    </offsets>
+  </model>
+  
+</PropertyList>

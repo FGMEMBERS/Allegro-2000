@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>divers.ac</path>
+
+  <animation>
+    <object-name>base</object-name>
+    <object-name>knobL</object-name>
+    <object-name>knobR</object-name>
+
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>knobL</object-name>
+    <object-name>knobR</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <red>   0.80 </red>
+      <green> 0.50 </green>
+      <blue>  0.50 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

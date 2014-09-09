@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>floats.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>axes</object-name>
+    <object-name>flotteurs</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>axes</object-name>
+    <object-name>flotteurs</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>axes</object-name>
+    <object-name>flotteurs</object-name>
+  </effect>
+  
+</PropertyList>
